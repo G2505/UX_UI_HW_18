@@ -1,0 +1,112 @@
+body {
+    margin: 0% auto;
+  }
+.inline-block {
+    display: inline-block;
+    vertical-align: top;  
+}
+.logo {
+  /* width: 23%;
+  padding: 1%; */
+  text-align: center;
+} 
+.navigation {
+    outline: 1px solid red;
+    margin-right: 20%;
+    /* width: 70%; */
+    /* padding: 1%; */
+}
+nav {
+  /* width: 73%;
+  padding: 1%; */
+  text-align: right;
+}
+ul {
+    /* width: 50%; */
+    margin-left: auto;
+}
+.heroImg {
+    height: 600px;
+    padding: 25px;
+    background-color: lightblue;
+}
+.content {
+    width: 500px;
+    margin: 0 auto;
+    outline: 0px 0px 1px 1px solid red;
+    border-bottom-style: solid;
+}
+footer {
+    background-color: #373738;
+    color: white;
+    /* text-align: center;
+    margin: auto; */
+    /* list-style-type: none; */
+}
+.container {
+    display: flex;
+    align-items: baseline;
+    max-width: 1600px;
+  margin-left: 5%;
+  margin-right: 70%;
+}
+.sub-content {
+    /* padding-left: 700px; */
+    outline: 1px solid red;
+}
+.mySkills {
+    background-color: lightseagreen;
+}
+.myWork {
+    background-color: lavender;
+}
+.flexContainer {
+    display: flex;
+  }
+  .flexContainer div {
+    width: 33%;
+    margin: 10px;
+    padding: 10px;
+  }
+  .workGrid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-columns: auto;
+    outline: 1px solid red;
+    padding: 10px;
+    
+  }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto
+        grid-gap: 10px; 
+        outline: 1px solid red;
+    padding: 10px; 
+    width: 40%;
+      }
+      /* .grid-container {
+        grid-template-areas:
+          "image1 details1"
+          "image2 details2";
+      } */
+     .project1-image {
+        outline: 1px solid red;
+        margin: 10px; 
+      }
+      .project2-image {
+        outline: 1px solid blue;
+        margin: 10px; 
+      }
+      .project1-details {
+        outline: 1px solid red;
+        margin: 10px; 
+      }
+      .project2-details {
+        outline: 1px solid blue;
+        margin: 10px; 
+      }
+/* @media screen and (max-width: 600px) {
+
+} */
+
+  

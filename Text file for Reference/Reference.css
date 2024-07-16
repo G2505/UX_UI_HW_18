@@ -1,0 +1,18 @@
+/* this is how you style an html element */
+h1 {
+    color: blue;
+}
+button {
+    color: white;
+    background-color: blue;
+}
+/* this is how you write classes */
+.inline-block {
+    display: inline-block;
+    vertical-align: top;  
+}
+/* this is how you write ids */
+#specialButton {
+    background-color: red;
+}
+/* this is a comment tag for html */
