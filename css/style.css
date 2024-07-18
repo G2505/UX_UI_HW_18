@@ -1,61 +1,68 @@
 body {
-    margin: 0% auto;
-  }
+    margin: 5% auto;
+    max-width: 1600px;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: #f5f0e7;
+}
 .inline-block {
     display: inline-block;
     vertical-align: top;  
 }
 .logo {
-  /* width: 23%;
-  padding: 1%; */
   text-align: center;
 } 
-.navigation {
-    outline: 1px solid red;
-    margin-right: 20%;
-    /* width: 70%; */
-    /* padding: 1%; */
-}
-nav {
-  /* width: 73%;
-  padding: 1%; */
-  text-align: right;
-}
-ul {
-    /* width: 50%; */
-    margin-left: auto;
-}
 .heroImg {
     height: 600px;
     padding: 25px;
     background-color: lightblue;
 }
 .content {
-    width: 500px;
+    /* width: 500px; */
     margin: 0 auto;
     outline: 0px 0px 1px 1px solid red;
     border-bottom-style: solid;
+    font: 30px new-spirit, sans-serif;
 }
 footer {
     background-color: #373738;
     color: white;
-    /* text-align: center;
-    margin: auto; */
-    /* list-style-type: none; */
 }
-.container {
-    display: flex;
-    align-items: baseline;
-    max-width: 1600px;
+
+/*this is the header and contents*/
+
+.fred {
+  display: flex;
+  align-items: baseline;
+  max-width: 1600px;
   margin-left: 5%;
-  margin-right: 70%;
+  margin-right: 5%;
+  outline: 1px solid red;
+}
+.lily {
+    /* padding-left: 700px; */
+    outline: 1px solid red;
+    margin-left: auto;
+  
+}
+/*this is the footer and contents*/
+
+.container {
+  display: flex;
+  align-items: baseline;
+  max-width: 1600px;
+  margin-left: 5%;
+  margin-right: 5%;
+  outline: 1px solid red;
 }
 .sub-content {
     /* padding-left: 700px; */
     outline: 1px solid red;
+    margin-right:auto;
 }
+
 .mySkills {
     background-color: lightseagreen;
+    margin: auto;
 }
 .myWork {
     background-color: lavender;
@@ -68,30 +75,74 @@ footer {
     margin: 10px;
     padding: 10px;
   }
-  .workGrid {
+
+  /* this is where the work grid starts*/
+
+  /* .item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+} */
+.item1 { grid-area: project1-image; }
+.item2 { grid-area: project1-details; }
+.item3 { grid-area: project2-image; }
+.item4 { grid-area: project2-details; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'project1-image project1-image project1-details project1-details project1-details project1-details'
+  'project2-image project2-image project2-details project2-details project2-details project2-details';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  margin: 0px 10%; 
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/*this was my original css grid code*/
+
+  /* .workGrid {
     margin: 0px 5%;
     display: grid;
     grid-template-columns: auto;
     outline: 1px solid red;
     padding: 10px;
-    
   }
     .grid-container {
-        display: grid;
-        grid-template-columns: auto
-        grid-gap: 10px; 
-        outline: 1px solid red;
+    outline: 1px solid red;
+    display: grid;
     padding: 10px; 
-    width: 40%;
-      }
-      /* .grid-container {
-        grid-template-areas:
-          "image1 details1"
-          "image2 details2";
-      } */
+    margin: 0px 10%; 
+    grid-gap: 10px;
+  } */
      .project1-image {
         outline: 1px solid red;
         margin: 10px; 
+        display: inline-block;
       }
       .project2-image {
         outline: 1px solid blue;
@@ -100,13 +151,16 @@ footer {
       .project1-details {
         outline: 1px solid red;
         margin: 10px; 
+        display: inline-block;
       }
       .project2-details {
         outline: 1px solid blue;
         margin: 10px; 
       }
-/* @media screen and (max-width: 600px) {
-
-} */
+      @media only screen and (max-width: 600px) {
+        body {
+          background-color: lightblue;
+        }
+      }
 
   
