@@ -23,10 +23,6 @@ body {
     font: 30px new-spirit, sans-serif;
     color: #0A5029
 }
-footer {
-    background-color: #373738;
-    color: white;
-}
 
 /*this is the header and contents*/
 
@@ -44,20 +40,25 @@ footer {
     margin-right: 20px;
   
 }
+
 /*this is the footer and contents*/
 
-.container {
-  display: flex;
-  align-items: baseline;
-  max-width: 1600px;
-  margin-left: 5%;
-  margin-right: 5%;
-  outline: 1px solid red;
+footer {
+  color: #0A5029
 }
 .sub-content span {
-    /* outline: 1px solid red; */
-    margin: 20px;
+outline: 1px solid red;
+margin: 20px;
+/* color: dark gray */
 }
+.container {
+  display: flex;
+  align-items:baseline;
+  max-width: 1600px;
+  margin-left: 2%;
+  margin-right: 5%;
+  outline: 1px solid blue;
+  }
 
 .mySkills {
     background-color: lightseagreen;
