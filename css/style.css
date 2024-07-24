@@ -6,6 +6,7 @@ body {
 }
 li {
   margin: 0px 10px 0px 10px;
+  color: black
 }
 .inline-block {
     display: inline-block;
@@ -13,20 +14,20 @@ li {
 }
 .logo {
   text-align: center;
-} 
+ } 
 .heroImg {
-    height: 600px;
+    height: 400px;
     padding: 25px;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 .content {
     /* width: 500px; */
     margin: 0 auto;
-     border-bottom-style: solid;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
     font: 30px new-spirit, sans-serif;
     color: #0A5029
-    outline: 1px solid green;
-}
+   }
 
 /*this is the header and contents*/
 
@@ -35,26 +36,15 @@ li {
   justify-content: space-between;
   align-items: baseline;
   max-width: 1600px;
-  margin-left: 0%;
+  margin-left: 2%;
   margin-right: 0%;
-  outline: 1px solid red;
-}
-.lily span {
-    outline: 1px solid blue;
-    /* margin-left: 1250px;
-    margin-right: 20px;
-   */
+  /* outline: 1px solid red; */
 }
 
 /*this is the footer and contents*/
 
 footer {
   color: #0A5029
-}
-.sub-content span {
-outline: 1px solid red;
-margin: 20px;
-/* color: dark gray */
 }
 .container {
   display: flex;
@@ -67,19 +57,25 @@ margin: 20px;
 
 .mySkills {
     background-color: lightseagreen;
-    margin: auto;
-}
+    margin-top: 0% auto;
+    }
 .myWork {
     background-color: lavender;
 }
+h2 {
+  padding: 25px;
+}
+h3 {
+  padding: 25px;
+}
 .flexContainer {
     display: flex;
-  }
+}
   .flexContainer div {
     width: 33%;
-    margin: 10px;
+    margin: 5px;
     padding: 10px;
-  }
+   }
 
   /* this is where the work grid starts*/
 
@@ -105,26 +101,11 @@ margin: 20px;
   font-size: 30px;
 }
 
-/*this was my original css grid code*/
-
-  /* .workGrid {
-    margin: 0px 5%;
-    display: grid;
-    grid-template-columns: auto;
-    padding: 10px;
-  }
-    .grid-container {
-    display: grid;
-    padding: 10px; 
-    margin: 0px 10%; 
-    grid-gap: 10px;
-  } */
-        
-    @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
    .fred, .container {
     flex-direction: column; 
-    margin-left: 0;  
-    margin-right: 0;  
+    margin-left: 2%;  
+    margin-right: 0%;  
   }
   .lily, .sub-content {
     margin-left: auto;
@@ -138,7 +119,7 @@ margin: 20px;
   }
   /* Flex container adjustments for mobile */
   .flexContainer div {
-      width: 50%;  
+    width: 50%;  
     margin: 5px 0;  
   }
   /* Grid container adjustments for mobile */
@@ -149,6 +130,14 @@ margin: 20px;
       'project2-image'
       'project2-details';  
     gap: 5px; 
+  }
+  .mySkills .flexContainer {
+    flex-direction: column;  
+    align-items: center;     
+  }
+
+  .mySkills .flexChild {
+    margin-bottom: 20px;   
   }
 }
 
