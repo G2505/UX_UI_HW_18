@@ -4,6 +4,10 @@ body {
     /* font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; */
     background-color: #f5f0e7;
 }
+ul {
+  outline: 1px solid red;
+ padding: 0px 0px 0px 0px;
+}
 li {
   margin: 0px 10px 0px 10px;
   color: black
@@ -11,14 +15,19 @@ li {
 .inline-block {
     display: inline-block;
     vertical-align: top;  
+    background-color: orange;
 }
 .logo {
   text-align: center;
+  outline: 1px solid red;
  } 
 .heroImg {
     height: 400px;
     padding: 25px;
     /* background-color: lightblue; */
+}
+.main-content {
+  outline: 1px solid red;
 }
 .content {
     /* width: 500px; */
@@ -101,28 +110,40 @@ h3 {
   font-size: 30px;
 }
 
+/* media query starts here */
+
   @media only screen and (max-width: 600px) {
-   .fred, .container {
-    flex-direction: column; 
+  .fred {
+    flex-direction: row; 
     margin-left: 2%;  
     margin-right: 0%;  
   }
-  .lily, .sub-content {
+  .lily {
     margin-left: auto;
-    margin-right: auto;  
+    margin-right: auto; 
+    /* outline: 1px solid red;  */
   }
-    .heroImg {
-    height: 400px;  
+  ul {
+    outline: 1px solid green;
+   /* padding: 0px 0px 0px 0px; */
+  }
+  li {
+    /* margin: 0px 0px 0px 0px; */
+    color: black
+  }
+  .heroImg {
+    height: 300px;  
   }
   .content {
     font-size: 15px;
   }
-  /* Flex container adjustments for mobile */
+  .sub-content {
+    margin-left: 100px;
+  }
   .flexContainer div {
     width: 50%;  
     margin: 5px 0;  
   }
-  /* Grid container adjustments for mobile */
   .grid-container {
     grid-template-areas:
       'project1-image'
@@ -135,10 +156,18 @@ h3 {
     flex-direction: column;  
     align-items: center;     
   }
-
   .mySkills .flexChild {
     margin-bottom: 20px;   
   }
+  
+footer .container {
+  display: flex; 
+  flex-wrap: wrap; 
+  margin-top: 10px; 
 }
 
-  
+/* list items inside the footer */
+footer .sub-content li {
+  margin-right: 10px; 
+}
+  }
